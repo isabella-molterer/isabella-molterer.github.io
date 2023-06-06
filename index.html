@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<style>
+		img {
+			width: 50%;
+		}
+
+		.text-left h4,
+		.text-left p {
+			text-align: left;
+		}
+
+		.text-left ol,
+		.text-left ul {
+			display: block;
+		}
+	</style>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Funktionsweise: WWW -->
+				<section>
+					<section data-markdown>
+						### Wie funktioniert das Web?
+	
+						![alt text](images/www-website.png)
+
+						<!-- 
+							*Vergleich: Echtes Geschäft vs. Webshop*
+
+							Beispiel: man möchte einen Onlineshop eröffnen
+							Um eine Website zu eröffnen, müssen wir diese auf einem Server registrieren
+							Das ist wie das Mieten eines Lokals in der Stadt
+						-->
+					</section>
+
+					<section data-markdown>
+						#### Server = Lokalität
+
+						Hosting-Kosten = Mietkosten
+
+						![alt text](images/www-server.png)	
+
+						<!-- 
+							- Server sind Computer die im Internet hängen und die nie abgeschalten werden
+							- Somit sind die Daten im Internet immer und überall verfügbar
+							- man bezahlt dann Hosting-Kosten, was man vergleichen kann mit Miete zahlen 
+							- Website selber served den Content (z.B.: mufffins, produkte)
+						-->
+					</section>
+
+					<section data-markdown>
+						#### Server = Speicherplatz 
+						
+						Speichert alle Websitedaten: Text, Bilder, Videos, Produkte, ...
+
+						![alt text](images/www-website-content.png)
+					</section>
+
+					<section data-markdown>
+						#### IP & Domainname
+
+						![alt text](images/www-domain.png)
+
+						<!--
+							- jeder Server hat wie ein Lokal in der Stadt eine eigene Adresse - die IP Adresse 
+							- IP = Internet Protokoll, lange Wurst an Zahlen, die jedes Gerät benötigt um sich zum Internet zu verbinden und mit Servern zu kommunizieren
+							- IP Adressen sind schwer zu merken, deshalb wählen wir statt numerische IP-Adresse einen besser verständlicheren Namen, Domainname = unsere Webadresse z.B. www.isabella-molterer.com
+							- das ist wie ein aushängeschild beim laden, dadurch können andere Menschen zu deinem Shop finden, 
+							- alles nach dem www bezeichnet man als Domainname (für die suche relevant)
+						-->
+					</section>
+
+					<section data-markdown>
+						#### Server & Browser
+
+						Server liefert Daten an den Browser  
+						z.B.: Text, Bilder, Videos, Quellcode, ...
+
+						![alt text](images/www-server-browser.png)
+
+						<!--
+							- Server sendet beim Websiteaufruf alle benötigten Daten an den Client = Kunden, z.B.: text, bilder, videos, code
+							- für die Anzeige benötigt man ein spezielles Programm, den Webbrowser
+						-->
+					</section>
+
+					<section data-markdown>
+						#### Browser rendert Website
+
+						![alt text](images/www-website.png)
+						<!--
+							Der Browser kann den Quellcode lesen und interpretieren und anzeigen. Hätten wir den Browser nicht für die Übersetzung des Quellcodes würde ein Websitebesuch so aussehen 
+						-->
+					</section>
+				</section>
+
+
+
+				<!-- Definition: Was sind Websites und was sind sie nicht? -->
+				<section>
+					<section data-markdown>
+						### Was ist eine Website?
+						
+						Homepage - 		Webpage -		Landingpage	
+
+						Website -		Webshop	-		Webapp	
+							
+						<!-- 
+							Homepage: erste Seite, die geladen wird, wenn die Website-URL eingegeben wird = Startseite, Shopfenster
+									  enthält meist auch die Navigationsleiste bzw. das Menü um auf andere Webpages zu gelangen
+							Webpages: sind andere Unterseiten deiner Website
+							Homepage und Webpage ergeben zusammen die Website
+
+							Landingpage: 
+								- eine alleinstehende Webseite, speziell für Marketingzwecke/kampagnen erstellt
+								- auf diese Seite wird in Werbemails und Werbebanner von Google, YouTube, Facebook, SoMe ... verlinkt
+								- man "landet" auf dieser Seite
+
+							Webshop:
+								- komplexer als Website
+								- Produkt oder Dienstleistung wird nicht nur beworben, sondern kann auch erworben werden
+								- Unterscheidungsmerkmale: Warenkorb, Checkout, Kundenkonto, ...
+							
+							Webapp/Native App/App:
+								- 
+						-->			
+					</section>
+
+					<section data-markdown>
+						### Homepage, Webpage, Website
+
+						TODO: bild einfügen									
+					</section>
+				</section>
+
+
+				<!-- Funktionsweise: Websites -->
+				<section>	
+					<section data-markdown>
+						### Wie funktioniert eine Website?
+
+						Eine Website liefert Inhalte an den Browser
+					</section>
+
+					<section data-markdown class="text-left">
+						**Dynamische** Inhalte In Form von Daten aus einer Datenbank *
+						- Kundendaten
+						- Produktdaten
+						
+						**Datenbank = Lagerhalle für verschiedene Daten und Dateien*
+					</section>
+
+					<section data-markdown class="text-left">
+						**Statische** Inhalte in Form von verschiedenen Dateien
+						- Bilder: .jpg, .png, ...
+						- Videos: .mp4, .gif, ...
+						- Styling: .css, .scss, ...
+						- Logik: .js
+					</section>
+
+					<section data-markdown class="text-left">
+						#### HTML
+						- Struktur einer Website
+						- Markup für Text, Bilder, Links
+						- KEIN Styling
+
+						TODO: bild einfügen
+					</section>
+
+					<section data-markdown class="text-left">
+						#### CSS
+						- Styling einer Website
+						- Farben, Schriften, Layout
+						- WENIG Interaktion möglich
+
+						TODO: bild einfügen
+					</section>
+
+
+					<section data-markdown class="text-left">
+						#### JavaScript
+						- Interaktion mit einer Website bzw. der UI (User Interface)
+						- Kommentare verfassen
+						- Bilder hochladen
+						- Likes vergeben
+
+						TODO: bild einfügen
+					</section>
+
+
+					
+					<section data-markdown class="text-left">
+						### Frontend-Entwicklung
+						- die *eine Hälfte* der Webentwicklung
+						- HTML (HyperTextMarkupLanguage)
+						- CSS (CascadingStyleSheets)
+						- JS (JavaScript)
+
+						TODO: bild einfügen
+					</section>
+
+										
+					<section data-markdown class="text-left">
+						### Backend-Entwicklung
+						- die *andere Hälfte* der Webentwicklung?
+						- Magie: für den Nutzer unsichtbar, da die Vorgänge nicht im Browser passieren
+						- Hauptaufgabe: Validierung und Speicherung Daten für eine späteren Verwendung
+							<!-- damit Beiträge später noch auffindbar sind
+							- damit Inhalte auf der ganzen Welt mit jedem geteilt werden können -->
+
+						TODO: bild einfügen						
+					</section>
+				</section>
+
+
+				<!-- Use Cases -->
+				<section>
+					<section data-markdown>
+						### Wie kann ich eine Website erstellen?
+					</section>
+
+					<section data-markdown class="text-left">
+						1) Website selbst entwickeln
+
+							- Programmierkenntnisse nötigt
+							- Vorteil: freie Gestaltungsmöglichkeiten, weniger Kosten
+							- Nachteil: Webentwicklung alleine reicht für den Erfolg der Website nicht aus (SEO, SEA, Social Media, Webdesign, UI/UX-Design, eCommerce, CMS, Webanalytics, Accessibility, Security, ...)
+					</section>
+
+					<section data-markdown class="text-left">
+						2) Website mit Baukastensystem bauen
+
+							- Bauskastensysteme wie Jimdo, Wix, Wordpress mit Elementor, Shopify (Webshop)
+							- Themes können verwendet werden, um vorfertigte Layouts und Designs zu verwenden
+							- Vorteil: wenig technisches Know-How
+							- Nachteil: generischer Look, begrenzte Möglichkeiten
+					</section>
+
+					<section data-markdown class="text-left">
+						2) Agenturlösung
+					
+							- Agentur übernimmt technischer Umsetzung
+							- Inhalte und Design können eigenständig oder von der Agentur gestaltet werden
+							- Vorteil: Individualität, größere Komplexität
+							- Nachteil: Kosten
+					</section>
+				</section>				
+
+				<!-- Conclusio -->
+				<section>
+					<section data-markdown>
+						### Conclusio
+					</section>
+					<section data-markdown>
+						#### Wie funktionert das www
+						---
+						| Coffee-Shop 	| Webshop 		|
+						| Addresse 		| IP-Addresse	|
+						| Schild 		| Domainname    |
+						| Schaufenster 	| Homepage 		|
+						---
+
+						wie funktionieren websites und was gehört zu webentwicklung
+						2 Hälften der Webentwicklung
+						Frontend: HTML - Skellet, CSS - Aussehen (Fleisch), JS - Interaktion
+						Backend: speichern und validieren von Daten
+
+						wie komme ich zur website
+						kleine, simple Websites -> Baukastensystem
+						große, komplexe Websites mit Beständigkeit -> Agenturlösung
+		
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						### Q&A
+						#### Fragen, Feedback & Kommentare
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
