@@ -31,6 +31,14 @@
 		.text-left img {
 			width: 200px;
 		}
+
+		.has-footnote em {
+			font-size: 75%;
+		}
+
+		ul ul {
+			font-size: 80%;
+		}
 	</style>
 	<body>
 		<div class="reveal">
@@ -69,9 +77,10 @@
 					<section data-markdown>
 						#### Server = Speicherplatz 
 						
-						Speichert alle Websitedaten: Text, Bilder, Videos, Produkte, ...
+						speichert verschiedene Websitedaten
 
 						![alt text](images/www-website-content.png)
+						<!-- Texte, Bilder, Videos, Produkte, ... -->
 					</section>
 
 					<section data-markdown>
@@ -118,10 +127,12 @@
 				<section>
 					<section data-markdown>
 						### Was ist eine Website?
-						
-						Homepage - 		Webpage -		Landingpage	
 
-						Website -		Webshop	-		Webapp	
+						![alt text](images/www-definition.png)	
+						
+						<!-- Homepage - 		Webpage -		Landingpage	
+
+						Website -		Webshop	-		Webapp	-->
 							
 						<!-- 
 							Homepage: erste Seite, die geladen wird, wenn die Website-URL eingegeben wird = Startseite, Shopfenster
@@ -145,16 +156,6 @@
 					</section>
 
 					<section data-markdown>
-						### Homepage, Webpage, Website
-
-						TODO: bild einfügen									
-					</section>
-				</section>
-
-
-				<!-- Funktionsweise: Websites -->
-				<section>	
-					<section data-markdown>
 						### Wie funktioniert eine Website?
 
 						Eine Website liefert Inhalte an den Browser
@@ -174,6 +175,14 @@
 						- Videos: .mp4, .gif, ...
 						- Styling: .css, .scss, ...
 						- Logik: .js
+					</section>
+				</section>
+
+
+				<!-- Funktionsweise: Websites -->
+				<section>	
+					<section data-markdown>
+						### Wie entwickelt man Websites?
 					</section>
 
 					<section data-markdown class="text-left">
@@ -197,7 +206,7 @@
 
 					<section data-markdown class="text-left">
 						#### JavaScript
-						- Interaktion mit einer Website bzw. der UI (User Interface)
+						- Interaktion mit einer Website bzw. der UI
 						- Kommentare verfassen
 						- Bilder hochladen
 						- Likes vergeben
@@ -218,7 +227,7 @@
 										
 					<section data-markdown class="text-left">
 						### Backend-Entwicklung
-						- die *andere Hälfte* der Webentwicklung?
+						- die *andere Hälfte* der Webentwicklung
 						- Magie: für den Nutzer unsichtbar, da die Vorgänge nicht im Browser passieren
 						- Hauptaufgabe: Validierung und Speicherung Daten für eine späteren Verwendung
 							<!-- damit Beiträge später noch auffindbar sind
@@ -233,65 +242,81 @@
 						### Wie kann ich eine Website erstellen?
 					</section>
 
-					<section data-markdown class="text-left">
-						1) Website selbst entwickeln
+					<section data-markdown class="text-left has-footnote">
+						#### 1. Website selbst entwickeln
 
-							- Programmierkenntnisse nötigt
-							- Vorteil: freie Gestaltungsmöglichkeiten, weniger Kosten
-							- Nachteil: Webentwicklung alleine reicht für den Erfolg der Website nicht aus (SEO, SEA, Social Media, Webdesign, UI/UX-Design, eCommerce, CMS, Webanalytics, Accessibility, Security, ...)
+						- Programmierkenntnisse nötig
+						- Vorteil: freie Gestaltung, weniger Kosten
+						- Nachteil: Webentwicklung alleine reicht für den Erfolg der Website nicht aus*
+						
+						**SEO, SEA, Social Media, Webdesign, UI/UX-Design, eCommerce, CMS, Webanalytics, Accessibility, Security, ...*
 					</section>
 
 					<section data-markdown class="text-left">
-						2) Website mit Baukastensystem bauen
+						#### 2. Website mit Baukastensystem bauen
 
-							- Bauskastensysteme wie Jimdo, Wix, Wordpress mit Elementor, Shopify (Webshop)
-							- Themes können verwendet werden, um vorfertigte Layouts und Designs zu verwenden
-							- Vorteil: wenig technisches Know-How
-							- Nachteil: generischer Look, begrenzte Möglichkeiten
+						- Bauskastensysteme mit fertigen Themes
+							- Jimdo 
+							- Wix
+							- Wordpress mit Elementor
+							- Shopify (Webshop)
+						- Vorteil: wenig technisches Know-How
+						- Nachteil: generischer Look, begrenzte Möglichkeiten
+						<!-- Themes können verwendet werden, um vorfertigte Layouts und Designs zu verwenden-->
 					</section>
 
 					<section data-markdown class="text-left">
-						2) Agenturlösung
+						#### 3. Agenturlösung
 					
-							- Agentur übernimmt technischer Umsetzung
-							- Inhalte und Design können eigenständig oder von der Agentur gestaltet werden
-							- Vorteil: Individualität, größere Komplexität
-							- Nachteil: Kosten
+						- Agentur übernimmt technischer Umsetzung
+						- Inhalte und Design können eigenständig oder von der Agentur gestaltet werden
+						- Vorteil: Individualität, größere Komplexität
+						- Nachteil: Kosten
 					</section>
 				</section>				
 
-				<!-- Conclusio -->
+				<!-- Cookies -->
 				<section>
 					<section data-markdown>
-						### Conclusio
+						### Was sind Cookies?
 					</section>
+
 					<section data-markdown>
-						#### Wie funktionert das www
-						---
-						| Coffee-Shop 	| Webshop 		|
-						| Addresse 		| IP-Addresse	|
-						| Schild 		| Domainname    |
-						| Schaufenster 	| Homepage 		|
-						---
+						- kleine Dokumente die Daten zu einer Website speichern z.B. Nutzeraktivitäten und -präferenzen
+						- Reguläre Cookies: lokal, auf dem eigenen Gerät gespeichert
+						- Third Party-Cookies: lokale ID, weitere Nutzerdaten auf externen Server gespeichert
+					</section>
 
-						wie funktionieren websites und was gehört zu webentwicklung
-						2 Hälften der Webentwicklung
-						Frontend: HTML - Skellet, CSS - Aussehen (Fleisch), JS - Interaktion
-						Backend: speichern und validieren von Daten
+						<!-- HTTP Cookies
+							- Websites sind dumm und können sich keine Daten merken (es sei denn sie verfügen über eine Datenbank, in der sie Daten speichern können)
+							- Präferenzen z.B. früher hat man die bevorzugten Website-Sprache 
+							- Nutzeraktitäten z.B. Anzeige von Ads, Diensten, ...
+							- Recommendersystems z.B. Empfehlungen aufgrund der letzten Klicks
+							- Logindaten z.B. um Facebook zu verwenden ohne sich mehrmals hintereinander anmelden zu müssen
+							- Monitoring z.B: um zu tracken wieviele User eine Website besucht haben
+							- Verbesserung des User Experience z.B.: Gutscheincodes oder Artikel eines Warenkorbes zwischenspeichern obwohl man die Website geschlossen hat
+							- Cookies sind in der Größe limitiert -> spätere Lösung war es in Cookie eine ID zu speichern und alle weiteren Daten auf einem anderen Rechner zu speichern -> 3rd Party Cookies
+							- Cookies sind der Grund warum wir Werbung angezeigt bekommen, denn manche Websites teilen Cookies mit anderen, weshalb auf manchen Websites Ads angezeigt werden können die unsere letzten Suchanfragen wiederspiegeln
+							- Cookies anderer Websites können uns identifizieren
+						-->
+					</section>
 
-						wie komme ich zur website
-						kleine, simple Websites -> Baukastensystem
-						große, komplexe Websites mit Beständigkeit -> Agenturlösung
-		
+					<section data-markdown>
+						# 🍪
 					</section>
 				</section>
 
+
+
+				<!-- Conclusion -->
 				<section>
 					<section data-markdown>
 						### Q&A
 						#### Fragen, Feedback & Kommentare
 					</section>
 				</section>
+
+				
 			</div>
 		</div>
 
